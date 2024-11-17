@@ -9,14 +9,14 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit some common TWRP stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from Spacewar device
 $(call inherit-product, device/nothing/Spacewar/device.mk)
 
 PRODUCT_DEVICE := Spacewar
-PRODUCT_NAME := omni_Spacewar
+PRODUCT_NAME := twrp_Spacewar
 PRODUCT_BRAND := Nothing
 PRODUCT_MODEL := A063
 PRODUCT_MANUFACTURER := nothing
