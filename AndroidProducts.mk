@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_Spacewar.mk
+    $(LOCAL_DIR)/twrp_Spacewar.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_Spacewar-user \
-    omni_Spacewar-userdebug \
-    omni_Spacewar-eng
+    twrp_Spacewar-user \
+    twrp_Spacewar-userdebug \
+    twrp_Spacewar-eng
