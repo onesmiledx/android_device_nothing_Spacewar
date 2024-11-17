@@ -9,6 +9,10 @@ DEVICE_PATH := device/nothing/Spacewar
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
+BUILD_BROKEN_USES_NETWORK := true
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
 # A/B
 AB_OTA_UPDATER := true
@@ -92,6 +96,14 @@ BOARD_NOTHING_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
 
 # Platform
 TARGET_BOARD_PLATFORM := lahaina
+BOARD_USES_QCOM_HARDWARE := true
+
+# Despite being VA/B device, there is a dedicated recovery partition
+BOARD_USES_RECOVERY_AS_BOOT :=
+BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT :=
+
+# Use LZ4 Ramdisk compression instead of GZIP
+BOARD_RAMDISK_USE_LZ4 := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/fstab.default
