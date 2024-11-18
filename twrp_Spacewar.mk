@@ -17,7 +17,7 @@ $(call inherit-product, device/nothing/Spacewar/device.mk)
 
 PRODUCT_DEVICE := Spacewar
 PRODUCT_NAME := twrp_Spacewar
-PRODUCT_BRAND := Nothing
+PRODUCT_BRAND := nothing
 PRODUCT_MODEL := A063
 PRODUCT_MANUFACTURER := nothing
 
